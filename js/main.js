@@ -12,6 +12,15 @@ $(document).ready(function() {
 
 
     });
+
+
+
+    $('.menu').click(function() {
+        $('.menu').toggleClass('height');
+    });
+
+
+
     $('#loading').fadeOut(1000, function() {
         $('body').css('overflow', 'auto');
     });
@@ -58,7 +67,7 @@ new WOW().init();
 
 
 
-//             if (items[k].getAttribute("data-id") == target) {
+//             if (items[k].getAttribute("data-id") == target) {   
 //                 items[k].style.opacity = "1";
 //                 items[k].style.transform = '';
 //             }
@@ -77,3 +86,17 @@ new WOW().init();
 
 //     });
 // }
+let offSet = $('.portfolio').offset().top;
+console.log(offSet);
+$(window).scroll(function() {
+    let wscroll = $(window).scrollTop();
+    console.log(wscroll);
+    if (wscroll > offSet - 700) {
+        $('.html').css('width', '90%');
+        $('.css').css('width', '80%');
+        $('.js').css('width', '60%');
+        $('.jquery').css('width', '70%');
+        $('.sass').css('width', '85%');
+        $('.angular').css('width', '75%')
+    }
+})

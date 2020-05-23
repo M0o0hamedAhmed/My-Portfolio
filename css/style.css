@@ -1,5 +1,32 @@
 html {
   scroll-behavior: smooth;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+html ::-webkit-scrollbar {
+  width: 1.8%;
+}
+
+html ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 50px #020312;
+          box-shadow: inset 0 0 50px #020312;
+  background-color: #020312;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: #FCBF1E;
+  border-radius: 60% 20%;
+  -webkit-border-radius: 60% 20%;
+  -moz-border-radius: 60% 20%;
+  -ms-border-radius: 60% 20%;
+  -o-border-radius: 60% 20%;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: #28204B;
 }
 
 body {
@@ -44,7 +71,7 @@ body .border-body ul li:first-child, body .border-skills ul li:first-child, body
   left: 0;
   position: absolute;
   width: 0%;
-  height: 5%;
+  height: 7%;
   background-color: #fff;
   -webkit-animation-name: border-t-l;
           animation-name: border-t-l;
@@ -70,7 +97,7 @@ body .border-body ul li:nth-child(2), body .border-skills ul li:nth-child(2), bo
   top: 0;
   right: 0;
   position: absolute;
-  width: 1.4%;
+  width: 2%;
   height: 0;
   background-color: #fff;
   -webkit-animation-name: border-t-r;
@@ -135,7 +162,7 @@ body .border-body ul li:last-child, body .border-skills ul li:last-child, body .
   bottom: 0;
   left: 0;
   position: absolute;
-  width: 1.5%;
+  width: 2%;
   height: 0%;
   background-color: #fff;
   -webkit-animation-name: border-b-l;
@@ -199,6 +226,22 @@ body .border-skills ul, body .my-skills .container .details-plus-progress .progr
 
 body .border-skills ul li, body .my-skills .container .details-plus-progress .progress .parent .html .border ul li, body .my-skills .container .details-plus-progress .progress .parent .css .border ul li, body .my-skills .container .details-plus-progress .progress .parent .js .border ul li, body .my-skills .container .details-plus-progress .progress .parent .jquery .border ul li, body .my-skills .container .details-plus-progress .progress .parent .sass .border ul li, body .my-skills .container .details-plus-progress .progress .parent .angular .border ul li {
   background-color: #fff;
+}
+
+body .border-skills ul li:first-child, body .my-skills .container .details-plus-progress .progress .parent .html .border ul li:first-child, body .my-skills .container .details-plus-progress .progress .parent .css .border ul li:first-child, body .my-skills .container .details-plus-progress .progress .parent .js .border ul li:first-child, body .my-skills .container .details-plus-progress .progress .parent .jquery .border ul li:first-child, body .my-skills .container .details-plus-progress .progress .parent .sass .border ul li:first-child, body .my-skills .container .details-plus-progress .progress .parent .angular .border ul li:first-child {
+  height: 12%;
+}
+
+body .border-skills ul li:nth-child(2), body .my-skills .container .details-plus-progress .progress .parent .html .border ul li:nth-child(2), body .my-skills .container .details-plus-progress .progress .parent .css .border ul li:nth-child(2), body .my-skills .container .details-plus-progress .progress .parent .js .border ul li:nth-child(2), body .my-skills .container .details-plus-progress .progress .parent .jquery .border ul li:nth-child(2), body .my-skills .container .details-plus-progress .progress .parent .sass .border ul li:nth-child(2), body .my-skills .container .details-plus-progress .progress .parent .angular .border ul li:nth-child(2) {
+  width: 10%;
+}
+
+body .border-skills ul li:nth-child(3), body .my-skills .container .details-plus-progress .progress .parent .html .border ul li:nth-child(3), body .my-skills .container .details-plus-progress .progress .parent .css .border ul li:nth-child(3), body .my-skills .container .details-plus-progress .progress .parent .js .border ul li:nth-child(3), body .my-skills .container .details-plus-progress .progress .parent .jquery .border ul li:nth-child(3), body .my-skills .container .details-plus-progress .progress .parent .sass .border ul li:nth-child(3), body .my-skills .container .details-plus-progress .progress .parent .angular .border ul li:nth-child(3) {
+  height: 12%;
+}
+
+body .border-skills ul li:last-child, body .my-skills .container .details-plus-progress .progress .parent .html .border ul li:last-child, body .my-skills .container .details-plus-progress .progress .parent .css .border ul li:last-child, body .my-skills .container .details-plus-progress .progress .parent .js .border ul li:last-child, body .my-skills .container .details-plus-progress .progress .parent .jquery .border ul li:last-child, body .my-skills .container .details-plus-progress .progress .parent .sass .border ul li:last-child, body .my-skills .container .details-plus-progress .progress .parent .angular .border ul li:last-child {
+  width: 8%;
 }
 
 body .container-body, body header .navbar .container, body header .container, body .about-me .container, body .services .container, body .hire-me .container, body .my-skills .container, body .portfolio .container, body .counters .container, body .testimonials .container, body footer .container {
@@ -358,6 +401,7 @@ body header {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  background-position: right;
 }
 
 body header .navbar {
@@ -637,7 +681,7 @@ body .about-me .container .details .info {
   display: -ms-flexbox;
   display: flex;
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 1px;
 }
 
@@ -701,7 +745,7 @@ body .about-me .container .details .social-media {
 
 body .about-me .container .details .social-media ul {
   list-style-type: none;
-  padding: 0 10px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,7 +852,7 @@ body .services .container .row div {
       -ms-flex-pack: center;
           justify-content: center;
   width: 33.333%;
-  padding: 20px;
+  padding: 40px 20px 40px 0;
 }
 
 body .services .container .row div svg {
@@ -821,6 +865,7 @@ body .services .container .row div h4 {
   display: inline;
   font-size: 25px;
   font-weight: bold;
+  margin: 30px 0;
 }
 
 body .services .container .row div p {
@@ -829,6 +874,12 @@ body .services .container .row div p {
   font-weight: bold;
   line-height: 2;
   white-space: 20;
+}
+
+body .services .container .row div span {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
 }
 
 body .hire-me {
@@ -914,7 +965,7 @@ body .my-skills .container h2 {
   font-weight: 600;
   font-size: 30px;
   text-transform: capitalize;
-  margin: 80px 0 40px 0;
+  margin-bottom: 40px;
 }
 
 body .my-skills .container .details-plus-progress {
@@ -1016,102 +1067,80 @@ body .my-skills .container .details-plus-progress .progress .parent h2 {
 
 body .my-skills .container .details-plus-progress .progress .parent .html {
   background-color: #F26C4F;
-  width: 90%;
+  width: 0%;
   height: .2rem;
   position: relative;
   margin-bottom: 5px;
-}
-
-body .my-skills .container .details-plus-progress .progress .parent {
-  width: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  margin: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  background-color: #020312;
-}
-
-body .my-skills .container .details-plus-progress .progress .parent h2 {
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #fff;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin: 10px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 body .my-skills .container .details-plus-progress .progress .parent .css {
   background-color: #F26C4F;
-  width: 80%;
+  width: 0%;
   height: .2rem;
   position: relative;
   margin-bottom: 5px;
-}
-
-body .my-skills .container .details-plus-progress .progress .parent {
-  width: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  margin: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  background-color: #020312;
-}
-
-body .my-skills .container .details-plus-progress .progress .parent h2 {
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #fff;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin: 10px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 body .my-skills .container .details-plus-progress .progress .parent .js {
   background-color: #F26C4F;
-  width: 60%;
+  width: 0%;
   height: .2rem;
   position: relative;
   margin-bottom: 5px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 body .my-skills .container .details-plus-progress .progress .parent .jquery {
   background-color: #F26C4F;
-  width: 70%;
+  width: 0%;
   height: .2rem;
   position: relative;
   margin-bottom: 5px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 body .my-skills .container .details-plus-progress .progress .parent .sass {
   background-color: #F26C4F;
-  width: 85%;
+  width: 0%;
   height: .2rem;
   position: relative;
   margin-bottom: 5px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 body .my-skills .container .details-plus-progress .progress .parent .angular {
   background-color: #F26C4F;
-  width: 85%;
+  width: 0%;
   height: .2rem;
   position: relative;
   margin-bottom: 5px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 body .portfolio {
@@ -1345,9 +1374,11 @@ body .testimonials .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 body .testimonials .container .swiper-container {
+  margin: 0 -250px;
   padding-top: 50px;
   padding-bottom: 50px;
   -ms-flex-item-align: center;
@@ -1770,6 +1801,15 @@ body footer .container .social-form .form button svg {
 
 body footer .overlay {
   background-color: rgba(18, 17, 30, 0.8);
+}
+
+body .map {
+  width: 100%;
+  background-color: #120136;
+}
+
+body .map iframe {
+  width: 100%;
 }
 
 body .right {

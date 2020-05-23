@@ -185,6 +185,10 @@
     padding: 25px 20px;
     cursor: pointer;
   }
+  body header .menu li a {
+    text-decoration: none;
+    color: #fff;
+  }
   body header .height {
     height: 80vh;
     padding: 100px 0 0 20px;
@@ -371,7 +375,10 @@
     width: 100%;
   }
   body .about-me .container .details .border {
-    width: 30%;
+    width: 37%;
+  }
+  body .about-me .container .details .border h2 {
+    font-size: 17px;
   }
   body .about-me .container .details p {
     font-size: 14px;
@@ -391,8 +398,19 @@
   body .about-me .container .details .info .info-second-column {
     width: 100%;
   }
+  body .about-me .container .details .social-media ul {
+    padding: 0;
+    font-size: 30px;
+  }
+  body .about-me .container .details .social-media ul li {
+    padding-right: 15px;
+  }
   body .about-me .container .details .social-media .resume {
     width: 40%;
+    padding: 10px;
+  }
+  body .about-me .container .details .social-media .resume button {
+    font-size: 20px;
   }
   body .services .container .row {
     -webkit-box-orient: vertical;
@@ -403,26 +421,13 @@
   body .services .container .row div {
     width: 100%;
   }
-  body .services .container .row div svg {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  body .services .container .row div h4 {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
   body .services .container .row div p {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
     line-height: 1.5;
     font-size: 17px;
   }
   body .hire-me .container .border {
-    width: 30%;
-    top: 85%;
+    width: 40%;
+    top: 82%;
     left: 20%;
   }
   body .my-skills .container .details-plus-progress {
@@ -441,14 +446,39 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  body .my-skills .container .details-plus-progress .details h3 {
+    font-size: 22px;
+  }
   body .my-skills .container .details-plus-progress .details .resume {
-    width: 40%;
+    width: 50%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    padding: 12px;
+  }
+  body .my-skills .container .details-plus-progress .details .resume button {
+    font-size: 20px;
   }
   body .my-skills .container .details-plus-progress .progress {
     width: 100%;
+  }
+  body .my-skills .container .details-plus-progress .progress .parent .html .border {
+    width: 18%;
+  }
+  body .my-skills .container .details-plus-progress .progress .parent .css .border {
+    width: 18%;
+  }
+  body .my-skills .container .details-plus-progress .progress .parent .js .border {
+    width: 18%;
+  }
+  body .my-skills .container .details-plus-progress .progress .parent .jquery .border {
+    width: 18%;
+  }
+  body .my-skills .container .details-plus-progress .progress .parent .sass .border {
+    width: 18%;
+  }
+  body .my-skills .container .details-plus-progress .progress .parent .angular .border {
+    width: 18%;
   }
   body .portfolio .container .row {
     -webkit-box-orient: vertical;
@@ -501,7 +531,10 @@
         align-self: center;
   }
   body footer .container .border {
-    width: 50%;
+    width: 55%;
+  }
+  body footer .container .border h2 {
+    font-size: 25px;
   }
   body footer .container .data {
     -webkit-box-orient: vertical;
